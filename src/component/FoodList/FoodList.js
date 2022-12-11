@@ -5,8 +5,8 @@ import {Table, Container, Row, Col} from 'react-bootstrap';
 
 function FoodList({foods, combos, filter}) {  
     console.log(foods);
-    foods = foods.filter((item) => item.Fname.includes(filter) || item.F_id.toString() == filter);
-    combos = combos.filter((item) => item.Cb_name.includes(filter) || item.Cb_id.toString() == filter);
+    //foods = foods.filter((item) => item.Fname.includes(filter) || item.F_id.toString() == filter);
+    //combos = combos.filter((item) => item.Cb_name.includes(filter) || item.Cb_id.toString() == filter);
 
   return (
         <div style={{textAlign: "center"}}>
