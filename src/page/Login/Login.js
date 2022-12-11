@@ -5,6 +5,7 @@ function Login() {
   const handleLogin = async () => {
     localStorage.setItem("route", document.getElementById("login_route").value);
     window.location.pathname = "/";
+    return;
       if (document.getElementById("login_username").value == "")
       {
         alert("Please input username!");
