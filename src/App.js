@@ -106,7 +106,7 @@ function App() {
       // Get the userId param from the URL.
       let { keyword } = useParams();
       return (
-        <Home foods = {foods} filter={keyword} combos = {combos}/>
+        <Home foods = {foods} myfilter={keyword} combos = {combos}/>
       );
       // ...
     }
@@ -117,7 +117,7 @@ function App() {
         <Route path = '/cart' element = {<Cart cart = {cart}/>}/>
         <Route path = '/user' element = {<User user = {user}/>}/>
         <Route path="/search/:keyword" element={<Search />} />
-        <Route path = '/' element = {<Home foods = {foods} filter = {""} combos = {combos}/>}/>
+        <Route path = '/' element = {<Home foods = {foods} myfilter = {""} combos = {combos}/>}/>
         <Route path = '/*' element = {<ErrorPage/>}/>
         
       </Routes>
