@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card';
 import React, {useState} from 'react';
 import {Table, Container, Row, Col} from 'react-bootstrap';
 
-function FoodList({foods, combos, filter}) {  
+function FoodList({foods, combos, myfilter}) {  
     console.log(foods);
-    //foods = foods.filter((item) => item.Fname.includes(filter) || item.F_id.toString() == filter);
-    //combos = combos.filter((item) => item.Cb_name.includes(filter) || item.Cb_id.toString() == filter);
+    foods = foods.filter((item) => item.Fname.includes(myfilter) || item.F_id.toString() == myfilter);
+    combos = combos.filter((item) => item.Cb_name.includes(myfilter) || item.Cb_id.toString() == myfilter);
 
   return (
         <div style={{textAlign: "center"}}>
