@@ -1,9 +1,9 @@
 
 import FoodList from '../../component/FoodList/FoodList';
 
-function Home({foods, filter, combos}) {
+function Home({foods, myfilter, combos}) {
     return (<>
-        <FoodList foods = {foods} filter = {filter} combos = {combos}/>
+        <FoodList foods = {foods} myfilter = {myfilter} combos = {combos}/>
     </>
     );
 }
